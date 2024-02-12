@@ -21,6 +21,33 @@ header {
     text-align: center;
 }
 
+nav {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px var(--card-shadow);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
 main {
     padding: 20px;
     display: flex;
@@ -48,12 +75,12 @@ main {
 
 .card-image {
     width: 100%;
-    height: 150px;
+    height: 200px; /* Increased height for desktop */
     object-fit: cover;
 }
 
 .card-content {
-    padding: 15px;
+    padding: 20px; /* Increased padding for desktop */
 }
 
 .card-content h2 {
@@ -69,6 +96,11 @@ main {
     text-decoration: none;
     color: var(--primary-color);
     margin-right: 10px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #0056b3; /* Darker shade for hover effect */
 }
 
 footer {
